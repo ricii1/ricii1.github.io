@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,p{
+    color: white;
+    font-family: "Cormorant Garamond", serif;
+}
+h1{
+    font-size: 48px;
+}
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size: 32px;
+}
+p{
+    font-size: 22px;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    background-color: rgb(66, 66, 66);
+    justify-content: space-between;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    align-items: center;
+    z-index: 9999;
+}
+body{
+    background-color: black;
+    height: 200vh;
+    padding-top: 70px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin-right: 40px;
+    transition: .5s;
+}
+nav a:hover{
+    font-weight: bold;
+}
+.aboutme{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.aboutme .img-container{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutme .info-container{
+    width: 65%;
+    padding-left: 30px;
+    padding-top: 50px;
+    padding-right: 130px;
+    box-sizing: border-box;
+}
+.info-container h1{
+    margin-top: 15px;
+}
+.info-container h2{
+    margin-top: 20px;
+}
+.img-container img{
+    border-radius: 50%;
+    max-width: 350px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.info-container .logo-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.info-container .logo-container img{
+    height: 181px;
+    width: 181px;
+    object-fit: cover;
+    margin-top: 20px;
+    transition: 1s;
+    filter: drop-shadow(-9px 5px 8px rgba(0,0,0,0.5));
+    /* box-shadow: -8px 10px 5px -2px rgba(0,0,0,0.16);
+    -webkit-box-shadow: -8px 10px 5px -2px rgba(0,0,0,0.16);
+    -moz-box-shadow: -8px 10px 5px -2px rgba(0,0,0,0.16); */
+}
+.info-container .logo-container img:hover{
+    transform: scale(1.2);
+}
+.projects{
+    padding-top: 70px;
+    margin-top: 70px;
+    box-sizing: border-box;
+    background-color: rgb(66, 66, 66);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.projects h1{
+    width: 100%;
+}
+.projects .card{
+    box-sizing: border-box;
+    background-color: black;
+    width: 500px;
+    height: 710px;
+    border-radius: 10%;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    padding-top: 20px;
+    line-height: 1.5;
+}
+
+.projects .card img{
+    width: 100%;
+}
+.projects .card li{
+    list-style: none;
+}
+.projects .card a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+.projects .card a:hover{
+    font-weight: bold;
+}
+.projects .card p{
+    margin: 0 20px;
+}
+.contacts{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 70px 0;
+}
+.contacts h1{
+    width: 100%;
+    text-align: center;
+}
+.contact-container{
+    width: 30%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-container a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+}
+.contact-container img{
+    height: 30px;
+}
+.github{
+    filter: invert(100%);
+}
